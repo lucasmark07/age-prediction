@@ -66,15 +66,15 @@ The project follows a standard machine learning pipeline:
 ```mermaid
 graph TD
     A[Raw Data: Train_Data.csv & Test_Data.csv] --> B{Data Preprocessing}
-    B --> C[Imputation (Mean/Mode)]
+    B --> C[Imputation: Mean or Mode]
     C --> D[One-Hot Encoding]
-    D --> E[Feature Scaling (Optional, but good practice for some models)]
+    D --> E[Feature Scaling - Optional]
     E --> F[Processed Data]
     F --> G{Model Training & Evaluation}
-    G --> H[Split Data (Train/Test)]
+    G --> H[Split Data: Train/Test]
     H --> I[XGBoost Classifier]
-    I --> J[Hyperparameter Tuning (GridSearchCV)]
-    J --> K[Trained Model (xgboost_model.pkl)]
+    I --> J[Hyperparameter Tuning: GridSearchCV]
+    J --> K[Trained Model: xgboost_model.pkl]
     K --> L{Prediction & Submission}
     L --> M[Generate Predictions on Test Data]
     M --> N[Create submission.csv]
@@ -82,7 +82,7 @@ graph TD
     O --> P[Confusion Matrix]
     O --> Q[ROC Curve]
     N --> R[Submission to Hackathon]
-```
+
 
 ## How to Run the Notebook
 
