@@ -1,3 +1,4 @@
+
 # NHANES Age Prediction: Senior vs. Adult
 
 This project aims to predict whether an individual from the National Health and Nutrition Examination Survey (NHANES) dataset is a 'Senior' (65 years or older) or an 'Adult' (under 65 years old) using machine learning techniques.
@@ -82,7 +83,7 @@ graph TD
     O --> P[Confusion Matrix]
     O --> Q[ROC Curve]
     N --> R[Submission to Hackathon]
-
+```
 
 ## How to Run the Notebook
 
